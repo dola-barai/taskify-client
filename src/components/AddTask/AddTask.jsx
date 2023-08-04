@@ -70,7 +70,7 @@ const AddTask = () => {
                         <input type="text" name="status" placeholder="Status" className="input input-bordered" />
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn btn-primary">Add A Toy</button>
+                        <button className="btn btn-primary">Add A Task</button>
                     </div>
                 </form>
             </div>
