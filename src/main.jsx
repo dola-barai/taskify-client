@@ -11,12 +11,17 @@ import MainLayout from './components/Pages/MainLayout.jsx';
 import AllTask from './components/AllTasks/AllTask';
 import AddTask from './components/AddTask/AddTask';
 import UpdateTask from './components/AllTasks/UpdateTask';
+import Dashboard from './components/Dashboard/Dashboard';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
     children: [
+      {
+        path: "/dashboard",
+        element: <Dashboard></Dashboard>
+      },
       {
         path: "/allTasks",
         element: <AllTask></AllTask>

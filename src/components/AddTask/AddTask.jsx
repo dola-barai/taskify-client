@@ -37,7 +37,7 @@ const AddTask = () => {
             })
     }
     return (
-        <div>
+        <div className="bg-sky-200 rounded-xl"> 
             <div className="m-10">
                 <h2 className="text-4xl font-bold text-center mb-5">Add a Task</h2>
                 <form onSubmit={handleAddTask}>
@@ -70,7 +70,7 @@ const AddTask = () => {
                         <input type="text" name="status" placeholder="Status" className="input input-bordered" />
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn btn-warning">Add A Toy</button>
+                        <button className="btn btn-primary">Add A Toy</button>
                     </div>
                 </form>
             </div>
