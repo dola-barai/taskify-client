@@ -10,7 +10,7 @@ const AllTask = () => {
 
     useEffect(() => {
         // Fetch data from the backend API endpoint
-        axios.get('http://localhost:5000/alltasks')
+        axios.get('https://taskify-server-delta.vercel.app/alltasks')
             .then(response => {
                 setAllTasks(response.data);
             })
@@ -30,7 +30,7 @@ const AllTask = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/alltasks/${task._id}`, {
+                fetch(`https://taskify-server-delta.vercel.app/alltasks/${task._id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -49,7 +49,7 @@ const AllTask = () => {
     }
 
     const handleCompleted = (task) => {
-        fetch(`http://localhost:5000/alltasks/completed/${task._id}`, {
+        fetch(`https://taskify-server-delta.vercel.app/alltasks/completed/${task._id}`, {
             method: 'PATCH'
         })
             .then(res => res.json())
@@ -114,7 +114,7 @@ const AllTask = () => {
                                     <td>
                                         {task.status === 'Completed' ?
                                             <>
-                                                <Link to={`/alltasks/${task._id}`}><button disabled className="btn btn-sm btn-info rounded-xl">Update</button></Link> :
+                                                <Link to={`/alltasks/${task._id}`}><button disabled className="btn btn-sm btn-info rounded-xl">Update</button></Link> 
                                             </>   
                                             :
                                             <>

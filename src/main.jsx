@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       {
         path: "/alltasks/:id",
         element: <UpdateTask></UpdateTask>,
-        loader: ({params}) => fetch(`http://localhost:5000/alltasks/${params.id}`)
+        loader: ({params}) => fetch(`https://taskify-server-delta.vercel.app/alltasks/${params.id}`)
       },
     ]
   },

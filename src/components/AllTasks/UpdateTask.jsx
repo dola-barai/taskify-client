@@ -21,7 +21,7 @@ const UpdateTask = () => {
         console.log(updatedTask);
 
         // send data to the server
-        fetch(`http://localhost:5000/alltasks/${tasks._id}`, {
+        fetch(`https://taskify-server-delta.vercel.app/alltasks/${tasks._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

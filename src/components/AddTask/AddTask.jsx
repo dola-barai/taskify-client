@@ -16,7 +16,7 @@ const AddTask = () => {
         }
         console.log(addTask);
 
-        fetch('http://localhost:5000/alltasks', {
+        fetch('https://taskify-server-delta.vercel.app/alltasks', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
