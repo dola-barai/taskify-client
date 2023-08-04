@@ -29,7 +29,7 @@ const AddTask = () => {
                 if (data.insertedId) {
                     Swal.fire(
                         'Good job!',
-                        'Add a Toy Data successfully',
+                        'Add a Task successfully',
                         'success'
                     )
 
